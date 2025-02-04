@@ -49,34 +49,36 @@ tikrintiBalsavimoTeise(16); // Negali balsuoti
 
 //3. Sukurkite programą, kuri pagal savaitės dienos numerį(nuo 1 iki 7) atspausdina dienos pavadinimą.Kurį metodą čia patartumėte naudoti?
 
-function amziausGrupe(grupe) {
-    if (grupe >= 12 && grupe <= 19) {
-        return 'Jaunuolis';
-    } else if (grupe >= 19 && grupe <=64) {
-        return 'Suauges';
-    } else if (grupe >= 64 && grupe <= 120) {
-        return 'Pensininkas';
-
+function pavadinimas(diena) {
+ 
+    if (diena == 1) {
+        return 'Pirmadienis';
+    } else if (diena == 2) {
+        return 'Antradienis';
+    } else if (diena == 3) {
+        return 'Trečiadienis';
+    } else if (diena == 4) {
+        return 'Ketvirtadienis';
+    } else if (diena == 5) {
+        return 'Penktadienis';
+    } else if (diena == 6) {
+        return 'Šeštadienis';
+    } else if (diena == 7) {
+        return 'Sekmadienis';
+    } else {
+        return 'Neteisingai įvestas skaičius'
     }
-    else {
-        return 'idk';
     }
-    
-}
-console.log(amziausGrupe(39));
-console.log(amziausGrupe(88));
-
-
-console.log('')
-console.log('Trecia uzduotis');
+    console.log('');
+console.log('Trečia užduotis');
 console.log(pavadinimas(1)); // Pirmadienis
 console.log(pavadinimas(2)); // Antradienis
-console.log(pavadinimas(3)); // Treciadienis
+console.log(pavadinimas(3)); // Trečiadienis
 console.log(pavadinimas(4)); // Ketvirtadienis
 console.log(pavadinimas(5)); // Penktadienis
-console.log(pavadinimas(6)); // Sestadienis
+console.log(pavadinimas(6)); // Šeštadienis
 console.log(pavadinimas(7)); // Sekmadienis
-console.log(pavadinimas(8)); 
+console.log(pavadinimas(8));
 
 
 

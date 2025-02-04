@@ -6,27 +6,10 @@ NUMBERS
 -Infinity
 */
 
- const n1 =1;
- console.log(n1);
-
-
-const n2 = -5;
-console.log(n2);
-
-const n3 = 3.14;
-console.log(n3);(n4);
-
-const n4 = -2.727;
-console.log
  
-const n5 = Infinity;
-console.log(n5);
-
-const n6 = -Infinity;
-console.log(n6);
-
 // 8/2 = 4
 // 'labas rytas'/2 = NaN
+
 
 console.log('labas rytas '/ 2); 
 console.log('labas rytas '* 2);
@@ -67,19 +50,4 @@ console.log(Math.ceil(10));
 console.log();
 console.log('Apvalinimas:round');
 console.log(Math.round(10));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
