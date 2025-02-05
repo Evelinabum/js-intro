@@ -66,6 +66,39 @@ console.log(gautiSezona(1)); // "Ziema"
 // 3.Sukurkite funkciją, kuri patikrina, ar vartotojo įvestas simbolis yra balsė, priebalsė ar nėra raidė.Koks operatorius geriausiai tinka?
  
 
+function isEqual (n1,n2) {
+  return n1 === n2? 'Skaiciai yra lygus' : 'Skaiciai yra nelygus';
+}
+
+console.log('Antra uzd');
+console.log('Pateikiame skaicius (1,1). ${isEqual(1,1)}');
+console.log('Pateikiame skaicius (2,1). ${isEqual(2,1)}');
+
+function test(raide){
+  const balses = ['a', 'ą', 'e', 'ę','i', 'į','y','o','u','ū','ų'];
+  const priebalses = ['b','c','č','d','f','g','h','j','k','l','m','n','p','r','s','š','t','v','z','ž'];
+
+  if(balses.includes(raide)) {
+    return 'Pateiktas simbolis yra balse';
+  } else if (priebalses.includes(raide)) {
+    return 'Pateiktas simbolis yra priebalse';
+  } else {
+    return 'Pateiktas simbolis nera raide' ;
+  }
+}
+  
+console.log('Trecia uzd');
+console.log(test('a'));
+console.log(test('b'));
+console.log(test('v')) ;
+console.log(test('1')) ;
+
+
+
+
+
+
+
 
 
 
