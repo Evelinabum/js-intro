@@ -91,15 +91,15 @@ console.log(Math.random());
 
 /**
  * Generuojamas atsitiktinis skaicius intervale(imtinai).
- * @param {*} min Nuo
+ * @param {*} min  Nuo
  * @param {*} max  Iki
  * @returns {number} Atsitiktinis sveikasis skaicius
  */
 
 
 
-function randomNumber(min,max) {
-    return Math.floor(Math.random() * (max-min+1)) +min;
+function randomNumber( min,max ) {
+    return Math.floor(Math.random () * (max - min+1)) + min;
 }
 
 for(let i=0; i<10; i++) {
@@ -109,6 +109,116 @@ console.log(i, randomNumber(10,20));
 
 //pasidaryti savo funkcija kuri grazina skaiciu su ribotu skaiciu kiekiu skaitmenu po kablelio
 //kas yra i++?
+//codewars
+
+
+
+console.log((3.1415).toFixed(1));
+console.log((3.1415).toFixed(2));
+console.log((3.1415).toFixed(3));
+console.log((3.1415).toFixed(4));
+
+
+console.log((3.1).toFixed(2));
+console.log((3.145).toFixed(2));
+
+
+function apvalinimas (n, amount) {
+    return Math.round(n* (10 ** amount)) / (10 ** amount );
+}
+
+
+console.log(apvalinimas(10, 2));
+console.log(apvalinimas(9.5,2));
+console.log(apvalinimas(3.145,-2));
+
+
+
+
+let k=10;
+
+
+console.log(k);
+
+k = k + 1;
+console.log(k);
+
+k = k + 10;
+console.log(k);
+
+k = k - 10;
+console.log(k);
+
+k = k * 10;
+console.log(k);
+
+k = k / 10;
+console.log(k);
+
+
+k +=  10;
+console.log(k);
+
+k +=  10;
+console.log(k);
+
+k +=  10;
+console.log(k);
+
+k %=  13;
+console.log(k);
+
+++k;
+console.log(k);
+
+
+console.log(k++);
+console.log(k);
+console.log(k);
+console.log(k++);
+console.log(k);
+
+
+
+console.log(++k);
+console.log(++k);
+console.log(++k);
+console.log(k);
+console.log(k++)
+
+console.log(--k);
+console.log(k--);
+
+
+
+k = k+1;
+k += 1;
+k++;
+++k;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
