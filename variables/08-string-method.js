@@ -181,11 +181,24 @@ function letterCount(text, searchSymbol) {
 
 
 function doesTextIncludesSymbol (text,symbol) {
-  for(let i=0; i<text.length; i++){
+  for(let i=0; i<text.length; i++) {
 if (text[i] === symbol) {
   return true;
 }
   }
+  return false;
+}
+
+
+function doesTextIncludesSymbol (text,symbol) {
+ const end = text.length;
+ 
+ for(let i=0; i < end ; i++) {
+     if (text[i]=== symbol) {
+      return true;
+     }
+  
+}
   return false;
 }
 
@@ -293,6 +306,205 @@ console.log('pomidoras'.indexOf('r'));
 console.log('pomidoras'.indexOf('x'));
 console.log('pomidoras'.indexOf('pom'));
 console.log('pomidoras'.indexOf('ido'));
+
+
+console.log('pomidoras'.indexOf('o'));
+console.log('pomidoras'.indexOf('o', 0));
+console.log('pomidoras'.indexOf('o', 1));
+console.log('pomidoras'.indexOf('o', 2));
+
+
+
+//includes tiksliai kur prasideda, yra/nera;
+
+
+console.clear();
+console.log(20,'aaaaaaaaaaaaaaaaaaa');
+console.log(5,'b-'. repeat(5));
+console.log(7,'labas, '. repeat(3));
+
+console.clear();
+
+
+let summer='vasara';
+console.log(summer);
+
+summer = summer.replace('a', '-');
+console.log(summer);
+
+summer= summer.replace('a','-');
+console.log(summer);
+
+let bird = 'kikilis';
+console.log(bird);
+
+bird = bird.replaceAll('k', '-=K=-');
+console.log(bird);
+
+
+bird = bird.replaceAll('=-','').replaceAll('=','').replaceAll('K', 's');
+console.log(bird);
+
+
+console.clear();
+console.log('pomidoras'.slice());
+console.log('pomidoras'.slice(0));
+console.log('pomidoras'.slice(1));
+console.log('pomidoras'.slice(-1));
+console.log('pomidoras'.slice(0, -4));
+
+//ciklo metu isistatyti 'i'
+
+
+
+
+
+
+//mokytojas ->mokytoja
+
+const textt = 'Mokytojas atejo ir tare. Ryte mokytojas vaiksto.';
+const textFemale = textt.replaceAll('mokytojas','mokytoja').replaceAll('Mokytojas','Mokytoja');
+
+   
+
+
+  console.log(textFemale);
+
+  
+  
+  
+  
+  //replaceAll('mokytojas','mokytoja');
+  //
+  //
+  //
+  //
+  //
+
+
+//svarbiausia rezultatas
+
+console.clear();
+
+
+console.log('pomidoraas'.toUpperCase());
+console.log('3 pomidoraai ir 4 agurkai'.toUpperCase());
+
+console.log('POMIDORAS'.toLowerCase());
+console.log('3POMIDORAI IR 4 AGURKAI'.toLowerCase());
+
+console.log('3POMIDORAI IR 4 AGURKAI'.toLocaleLowerCase());
+
+
+console.clear();
+const randomNumber=562156;
+console.log (randomNumber);
+console.log (randomNumber.toString());
+console.log ('' + randomNumber);
+console.log ('$ + {randomNumbe}');
+
+
+console.log(true);
+console.log(true.toString());
+console.log('' + true);
+console.log(' $ { true}');
+
+console.log ('<','pomidoras', '>');
+console.log('pomidoras');
+
+
+//nors ir yra tarpas , bet kaip simbolis yra matomas;
+const formUsername = ' Grietine    ';
+console.log(formUsername.length);
+console.log(formUsername.replaceAll(' ',' ').length);
+
+const hi = '    Labas rytas,          Lietuva!   ';
+console.log(hi.length);
+console.log(hi.trim().length);
+console.log(hi.trimEnd().length);
+
+console.log(
+   hi
+      .trim()
+      .replaceAll('    ',' ')
+      .replaceAll('    ',' ')
+      .replaceAll('    ',' ')
+
+  
+);
+console.log(hi.includes('  '));
+
+
+console.clear();
+
+
+const text123 = 'pirmas antras trecias';
+const dictionary = text123.split('');
+const wordsCount = dictionary.length;
+
+console.log(text123);
+console.log('pirmas antras trecias'.split(''));
+console.log('pirmas antras trecias'.split(''));
+console.log(text123[0]);
+console.log(text123[1]);
+console.log(dictionary[0]);
+console.log(dictionary[1]);
+
+
+const js = 'tekstas ilgas'
+const sentence = js.split('.');
+console.log(sentence);
+console.log(sentence.length);
+
+
+console.log('duona'.split('o'));
+console.log('duona'.split('u'));
+console.log('duona'.split('g'));
+console.log('duona'.split('a'));
+console.log('duona'.split('du'));
+
+
+
+
+console.log('vasara'.split('a'));
+console.log('vasara'.split('s'));
+
+
+console.log('vasara'.split('').length);
+
+console.log('vasara'.length);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
