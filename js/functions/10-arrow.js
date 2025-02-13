@@ -28,4 +28,12 @@ const  sandauga =  (a, b) => {
 }
 console.log(`${n1} * ${n2} = ${sandauga(n1, n2)}`);
 
+// Jeigu logikos bloke yra tik 1 procedura 
+// galima nerasyti {} ir return
+const dalyba = (a, b) => a / b; 
+console.log(`${n1} / ${n2} = ${dalyba(n1, n2)}`);
 
+// jeigu parametru bloke yra tik 1 parametras
+const kvadratu = a => a * a;
+console.log(`${n1} * ${n2} = ${kvadratu(n1)}`);
+console.log(`${n1} * ${n2} = ${kvadratu(n2)}`);
