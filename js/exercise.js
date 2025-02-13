@@ -158,14 +158,16 @@ console.log(arReikiaDirbti('atostogos'));
 
 // 8.Parašykite programą, kuri nustato, ar vartotojo įvestas metai yra keliamieji.Kurį operatorių naudoti?
 
-function keliamieji(metai){
-if (typeof metai!== 'numbers' || isNaN(metai)) 
-  return 'Iveskite metus(numbers)';
-return metai % 4 === 0? metai + 'yra keliamieji': metai + 'nekeliamieji';
+function keliamieji(metai) {
+return metai % 4 === 0 && (metai % 100 !== 0 || metai % 400 ===0 ) 
+?"Keliamieji"
+:"Nekeliamieji" ;
 }
 console.log('');
 console.log('Astunta uzduotis');
-console.log("\n" + keliamieji (2024)+ "\n\********");
+console.log(keliamieji(2024));
+console.log(keliamieji(2025));
+
 
 
 
