@@ -5,11 +5,24 @@ const numbers1 = [1, 2, 3, 4, 5];
  
 // Sprendimas su for ciklu:
 // Jūsų kodas čia...
+
+
+
+
+
+
  
 // Sprendimas su array metodu (reduce):
 // Jūsų kodas čia...
  
 // =============================================
+
+
+
+
+
+
+
 // Užduotis 2: Suskaičiuoti, kiek masyvo elementų yra lyginiai
 // =============================================
 const numbers2 = [1, 2, 3, 4, 5, 6];
@@ -20,10 +33,14 @@ const numbers2 = [1, 2, 3, 4, 5, 6];
  
 // Sprendimas su filter metodu:
 // Jūsų kodas čia...
- 
- 
- 
 // =============================================
+
+
+
+
+
+
+
 // Užduotis 3: Rasti didžiausią skaičių masyve
 // =============================================
 const numbers3 = [10, 5, 20, 8, 15];
@@ -38,6 +55,13 @@ const numbers3 = [10, 5, 20, 8, 15];
  
  
 // =============================================
+
+
+
+
+
+
+
 // Užduotis 4: Suskaičiuoti, kiek kartų masyve pasikartoja nurodytas skaičius
 // =============================================
 const numbers4 = [1, 2, 3, 2, 4, 2, 5];
@@ -53,6 +77,13 @@ const target = 2;
  
  
 // =============================================
+
+
+
+
+
+
+
 // Užduotis 5: Išfiltruoti ir sukurti naują masyvą, kuriame būtų tik teigiami skaičiai
 // =============================================
 const numbers5 = [-3, 0, 5, -1, 8, -2];
@@ -67,6 +98,14 @@ const numbers5 = [-3, 0, 5, -1, 8, -2];
  
  
 // =============================================
+
+
+
+
+
+
+
+
 // Užduotis 6: Rasti visų masyvo elementų sandaugą
 // =============================================
 const numbers6 = [1, 2, 3, 4];
