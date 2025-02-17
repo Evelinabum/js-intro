@@ -181,7 +181,7 @@ const doubleWords2 = words.filter(w => w.indexOf(w[0], 1) > 0);
 console.log(doubleWords2);
 
 
-const colors = ['red', 'green', 'blue'];
+const colors = ['red', 'green', 'blue', 'yellow', 'red', 'orange'];
 console.log(colors);
 
 const colors2 = colors.map((item, index, list) => item);
@@ -189,5 +189,24 @@ console.log(colors2);
 
 const colors3 = colors.map((item, index, list) => list[index]);
 console.log(colors3);
+
+//rasti visas spalvas , kurios kartojasi
+//rasti visas spalvas , kurios yra unikalios
+
+// ['red', 'green', 'blue', 'yellow', 'red', 'orange']
+const colorRepeat = colors.filter (
+    (color, index, list) => 
+        list.indexOf(color) < 1
+);
+console.log('----');
+console.log(colorRepeat);
+
+
+
+
+
+
+
+
 
 
