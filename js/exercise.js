@@ -103,6 +103,26 @@ console.log(test('1')) ;
 
 
 // 4.Parašykite programą, kuri pagal nurodytą dieną(pirmadienis, antradienis, ...sekmadienis) išveda, ar tai darbo diena ar savaitgalis.Kurį operatorių naudoti?
+
+function nurodytaDiena (diena) {
+  switch (diena) {
+    case 1 :
+     return 'pirmadienis'
+    case 2 :
+     return 'antradienis'
+    case 3:
+     return 'treciadienis'
+    case 4 :
+     return 'ketvirtadienis'
+    case 5 :
+     return 'penktadienis'
+    case 6 :
+     return 'sestadienis'
+    case 7 :
+     return 'sekmadienis'
+  }
+}
+console.log(nurodytaDiena(2));
  
 // 5.Sukurkite funkciją, kuri pagal įvestą temperatūrą(Celsius) nustato oro būklę: "Šalta"(< 10°C), "Šilta"(10 - 25°C), "Karšta"(> 25°C).Koks operatorius geriausiai tinka?
  
@@ -173,4 +193,14 @@ console.log(keliamieji(2025));
 
 
 // 9.Sukurkite funkciją, kuri pagal vartotojo įvestą temperatūrą(Celsius) priskiria aprangos rekomendaciją: "Kepurių nereikia", "Kepurės reikalingos", "Geriau neik į lauką".Koks operatorius geriausiai tinka?
- 
+ function aprangosRekomendacija (temperatura){
+  switch (true) {
+    case (temperatura >= 15):
+     return 'kepuriu nereikia'
+    case (temperatura >= 15 && temperatura  <= 10 ):
+     return 'kepures reikalingos';
+    case (temperatura < 10 ) :
+      return 'geriau neik i lauka';
+  }
+ }
+ console.log(aprangosRekomendacija(18));
