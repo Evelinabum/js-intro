@@ -109,9 +109,9 @@ for (let i = 0; i < word.length; i++) {
     }
   }
 
-console.log ('Zodyje yra "${word}" yra ${countA} "a" raides');
-console.log ('Zodyje yra "${word}" yra ${countV} "v" raides');
-console.log ('Zodyje yra "${word}" yra ${countX} "x" raides');
+console.log (`Zodyje yra "${word}" yra ${countA} "a" raides`);
+console.log (`Zodyje yra "${word}" yra ${countV} "v" raides`);
+console.log (`Zodyje yra "${word}" yra ${countX} "x" raides`);
 
 
 
