@@ -102,8 +102,12 @@ function skaicius (num) {
 // 7. Parašykite funkciją, kuri tikrina, ar žodis prasideda raide "A"(nesvarbu, didžioji ar mažoji).
 // (Pvz., pradedaA("Automobilis") → true, pradedaA("namas") → false.)
  
+console.log('          Septinta uzduotis');
+const pradedaA = (zodis) => zodis.toLowerCase().startsWith('a');
 
 
+console.log(pradedaA('Automobilis'));
+console.log(pradedaA('namas'));
 
 
 
@@ -111,17 +115,23 @@ function skaicius (num) {
 // 8. Sukurkite funkciją, kuri priima skaičių ir patikrina, ar jis dalus iš 3 ir 5(grąžina true arba false).
  
 
-function priimaSkaiciu (dalus) {
-
-}
+const dalusSkaicius = (skaicius) => skaicius % 3 ===0 && skaicius % 5 === 0;
+console.log('          Astunta uzduotis');
+console.log(dalusSkaicius(3));
+console.log(dalusSkaicius(30));
 
 
 
 // 9. Naudodami for ciklą, išveskite visus skaičius nuo 10 iki 1 mažėjančia tvarka.
 
-for (let i= 10; i > 1; i--) {
+const mazejanciaTvarka = () => {
+    for(let i = 10; i >= 1; i--) {
         console.log(i);
     }
+};
+console.log('          Devinta uzduotis');
+mazejanciaTvarka();
+    
 
  
 // 10. Parašykite for ciklą, kuris išveda tik lyginius skaičius nuo 2 iki 20.
@@ -183,7 +193,7 @@ console.log('Didziausias skaicius', maxNumber);
 
 // 14. Sukurkite funkciją, kuri priima stringą ir grąžina jį be tarpų.
 // (Pvz., beTarpų("Labas pasauli") → "Labaspasauli".)
-
+console.log('          Keturiolikta uzduotis');
 
 const keisti = (pstring) => pstring.replace("Labas pasauli", " Labaspasauli");
 console.log(keisti ('Labaspasauli'));
@@ -193,12 +203,23 @@ console.log(keisti ('Labaspasauli'));
 // (Pvz., arIlgas("JavaScript") → true, arIlgas("Labas") → false.)
 
 
+function ilgesnisNei10(tekstas) {
+    return tekstas.length >= 10;
+}
+  
+console.log('           Penkioloikta uzduotis');
+console.log(ilgesnisNei10("JavaScript"));
+console.log(ilgesnisNei10("Labas"));
 
-
- 
 // 16. Sukurkite for ciklą, kuris išveda daugybos lentelę 5(nuo 1 iki 10).
-
-
+console.log('          Sesiolikta uzduotis');
+for(let i= 1; i <= 10; i++) {
+    let eilute = '' ;
+    for ( let j= 1; j <= 10; j++) {
+        eilute += (i * j) + "";   
+     }
+     console.log(eilute);
+}
 
  
 // 17. Parašykite funkciją, kuri priima stringą ir pakeičia visas "a" raides į "@".
@@ -212,9 +233,16 @@ console.log(keistiRaides("Banana"));
 
  
 // 18. Sukurkite funkciją, kuri sugeneruoja stringą "**********"(10 žvaigždučių), naudojant for ciklą.
+console.log('          Astuoniolikta uzduotis');
 
-
-
+function sugenString() {
+   let zvaigzd = '';
+   for(let i = 0; i < 10 ; i++) {
+       zvaigzd += '*'; 
+   }
+    return zvaigzd;
+}
+console.log(sugenString());
 
  
 // 19. Parašykite funkciją, kuri priima skaičių ir grąžina visus jo daliklius(išskyrus 1 ir patį save).
@@ -228,3 +256,17 @@ console.log(keistiRaides("Banana"));
 // 20. Sukurkite funkciją, kuri tikrina, ar pateiktas skaičius yra pirminis.
 // (Pvz., arPirminis(7) → true, arPirminis(8) → false.)
 
+console.log('          Dvidesimta uzduotis');
+function arPirminis (sk) {
+    if (sk < 2) {
+        return false;
+    }
+    for (let i = 2; i <= Math.sqrt(sk); i++) {
+        if (sk % i === 0) {
+            return false;
+        }
+    }
+    return true;
+}
+console.log(arPirminis(7));
+console.log(arPirminis(8));
