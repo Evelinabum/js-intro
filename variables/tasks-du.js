@@ -149,13 +149,13 @@ console.log(skaiciuoti(numbers, target));
  
 // Sprendimas su filter metodu:
 // Jūsų kodas čia...
-function skaiciuoti (arr, target) {
-    return arr.filter (num => num === target).length;
+function skaiciuoti (arr, target2) {
+    return arr.filter (num => num === target2).length;
 }
  const number = [1, 2, 3, 2,  4, 2, 5];
  const target2 = 2;
  console.log('     Ketvirta uzduotis su filter');
- console.log(skaiciuoti(number, target));
+ console.log(skaiciuoti(number, target2));
  console.log('----------');
 
  
