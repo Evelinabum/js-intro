@@ -121,7 +121,6 @@ function sakinys(text) {
     return text.split(' ').length;
 }
 console.log(sakinys ('Labas rytas, Lietuva!'));
-console.log(sakinys ('Ką tu? Ką vakare?' ));
 
 const sakinys2 = text => text.split(' ').length;
 
