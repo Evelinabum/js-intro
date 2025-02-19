@@ -73,11 +73,7 @@ console.log(pp);
 
 // istrinti pozicija - delete ;
 //console.log(pp);
-
-
 console.log(pp.length);
-
-//length kiek yra poziciju
 
 const oo = [];
 oo [3] = 10;
