@@ -23,7 +23,7 @@ function gautiSezona (menesioNumeris) {
     
 }
 } 
-//Funkcija
+
 console.log('');
 console.log('Pirma uzduotis');
 console.log(gautiSezona(3)); // "Pavasaris"
@@ -32,36 +32,18 @@ console.log(gautiSezona(11)); // "Ruduo"
 console.log(gautiSezona(1)); // "Ziema"
 
 
-
-
-
-
 // 2.Parašykite programą, kuri nustato, ar du skaičiai yra lygūs, ar ne, ir atitinkamai išveda pranešimą.Kuris operatorius naudoti?
  function palygintiSkaicius (skaicius1, skaicius2){
     return skaicius1 === skaicius2 ? 'lygus ' : 'nelygus' ;
        }
     
 
-    //Testavimas
+   
     console.log('');
     console.log('Antra uzduotis');
     console.log(palygintiSkaicius(3,3)); //"Skaiciai lygus"
     console.log(palygintiSkaicius(5,3)); //"Skaiciai nera lygus"
      
-
-
-    
-    
- 
-
-
-
-
-
-
-
-
-
 
 // 3.Sukurkite funkciją, kuri patikrina, ar vartotojo įvestas simbolis yra balsė, priebalsė ar nėra raidė.Koks operatorius geriausiai tinka?
  
@@ -140,13 +122,9 @@ console.log('');
 console.log('Penkta uzduotis')
 console.log(weather(26))
 
-
-
-
-
-
-
 // 6.Parašykite programą, kuri patikrina, ar vartotojo įvestas skaičius yra daliklis tiek 3, tiek 5. Kurį operatorių naudoti?
+
+
  
 // 7.Sukurkite funkciją, kuri pagal įvestą dienos tipą("darbo diena", "savaitgalis") išveda atitinkamą veiklą: "Dirbti", "Ilsėtis".Kuri struktūra geriausiai tinka?
  
@@ -158,29 +136,19 @@ function arReikiaDirbti(dienosTipas) {
     } else {
         return'Neteisinga ivestis'; 
     }
-    
-    }
-//Testuojame
-console.log('');
+  }
+
+
 console.log('Septinta uzduotis');
 console.log(arReikiaDirbti('darbo diena'));
 console.log(arReikiaDirbti('savaitgalis'));
 console.log(arReikiaDirbti('atostogos'));
 
-
-
-
-
-    
- 
-
-
-
 // 8.Parašykite programą, kuri nustato, ar vartotojo įvestas metai yra keliamieji.Kurį operatorių naudoti?
 
 function keliamieji(metai) {
-return metai % 4 === 0 && (metai % 100 !== 0 || metai % 400 ===0 ) 
-?"Keliamieji"
+return metai % 4 === 0 && (metai % 100 !== 0 || metai % 400 === 0 ) 
+?"Keliamieji" 
 :"Nekeliamieji" ;
 }
 console.log('');
@@ -188,18 +156,14 @@ console.log('Astunta uzduotis');
 console.log(keliamieji(2024));
 console.log(keliamieji(2025));
 
-
-
-
-
 // 9.Sukurkite funkciją, kuri pagal vartotojo įvestą temperatūrą(Celsius) priskiria aprangos rekomendaciją: "Kepurių nereikia", "Kepurės reikalingos", "Geriau neik į lauką".Koks operatorius geriausiai tinka?
- function aprangosRekomendacija (temperatura){
+ function aprangosRekomendacija (temperatura) {
   switch (true) {
     case (temperatura >= 15):
      return 'kepuriu nereikia'
-    case (temperatura >= 15 && temperatura  <= 10 ):
+    case (temperatura <= 14 && temperatura  <= 9):
      return 'kepures reikalingos';
-    case (temperatura < 10 ) :
+    case (temperatura < 9 ) :
       return 'geriau neik i lauka';
   }
  }
