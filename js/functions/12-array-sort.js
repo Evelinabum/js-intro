@@ -82,7 +82,29 @@ const luckyNumbers = {
 const luckyNumbersArray = [10, 2, 8, 4, 6];
 
 
-// reference
+
+
+students.sort((a, b) => a.name < b.name ? -1 : a.name === b.name ? 0 : 1 );
+console.log(students);
+
+students.sort((a, b) => a.name < b.name ? 1 : a.name === b.name ? 0 : -1 );
+console.log(students);
+
+
+
+function sortStudentsByName(a, b) {
+  if (a.name < b.name) {
+    return -1;
+  } else if (a.name === b.name) {
+    return 0;
+  } else {
+    return 1;
+  }
+}
+students.sort(sortStudentsByName);
+console.log(students);
+
+
 
 
 
