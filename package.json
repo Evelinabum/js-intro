@@ -7,6 +7,7 @@
     "dev:back": "",
     "dev:front": "",
     "prod:back":"",
+    "dest" : "node --watch js/functions/dest.js" ,
     "loops" : "node --watch js/loops/17-loops.js" ,
     "spread":  "node --watch js/functions/spread.js" ,
     "ref" : "node --watch intro/14-ref.js" ,
