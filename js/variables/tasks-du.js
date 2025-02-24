@@ -8,13 +8,12 @@ console.log('        Pirma uzduotis su for ciklu');
 
 const numbers1 = [1, 2, 3, 4, 5];
 function skaiciuSuma (numbers1) {
-   let suma= 0;
+   let suma = 0;
    for (let i = 0; i < numbers1.length; i++) {
       suma += numbers1[i];
     }
     return suma;
 }
-
     console.log(skaiciuSuma( numbers1)); 
 
  
@@ -586,5 +585,6 @@ console.log(`${numbersFor(numbers20)}`);
  
 // Sprendimas su reduce:
 // Jūsų kodas čia...
+
  
  
