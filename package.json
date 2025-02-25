@@ -13,6 +13,7 @@
     "spread":  "node --watch js/functions/spread.js" ,
     "ref" : "node --watch intro/14-ref.js" ,
     "object" : "node --watch variables/13-object.js" ,
+    "mini:digits" : "node --watch js/functions/mini-digits.js",
     
     "mini" : "node --watch js/functions/mini.js",
     "array:sort" : "node --watch js/functions/12-array-sort.js",
