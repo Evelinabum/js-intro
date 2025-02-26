@@ -15,6 +15,9 @@
     "object" : "node --watch variables/13-object.js" ,
     "mini:digits" : "node --watch js/functions/mini-digits.js",
     
+    "mini:max" : "node --watch js/functions/mini-max.js",
+    "mini:letters" : "node --watch js/functions/mini-letters.js",
+    
     "mini" : "node --watch js/functions/mini.js",
     "array:sort" : "node --watch js/functions/12-array-sort.js",
     "tasks:du" : "node --watch js/variables/tasks-du.js" ,
@@ -23,13 +26,13 @@
     "arrow" : "node --watch js/functions/10-arrow.js" ,
     "array:method" : "node --watch js/variables/09-array-method.js" ,
     "summary" : "node --watch js/variables/summary.js" ,
-
     "code:wars" : "node --watch js/variables/code-wars.js" ,
-
     "array:uzduotys" : "node --watch variables/array-uzduotys.js" ,
+    "simas:uzd" : "node --watch js/variables/simas-uzd.js" ,
+
     "prod:front":"",
-    "uzduotys:string" : "node --watch variables/uzduotys-string.js",
-    "string:method": "node --watch variables/08-string-method.js",
+    "uzduotys:string" : "node --watch js/variables/uzduotys-string.js",
+    "string:method": "node --watch js/variables/08-string-method.js",
     "string":"node --watch js/variables/07-string.js",
     "numbers":"node --watch js/variables/06-numbers.js" ,
     "function" : "node --watch js/intro/05-function.js",
