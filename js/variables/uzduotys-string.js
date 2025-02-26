@@ -163,17 +163,12 @@ console.log(trimmed.trimStart());
 
 
 
-
-
-
-
-
 //Papildomos užduotys (sprendimams naudokite string metodus ir for ciklą (ne visuose uždaviniuose)):
 
 // 1. Iš string "mokymo centras" suformatuokite taip, kad pirmos raidės būtų didžiosios, o likusios mažosios.
-
-
-
+let texts = 'mokymo centras';
+let changeTexts = texts.split(' ').map(word => word[0].toUpperCase() + word.slice(1)).join(' ');
+console.log(changeTexts);
 
 
 
@@ -193,10 +188,13 @@ const teksta = tekst.reverse();
 
 console.log('     3uzduotis');
 console.log(teksta.join(""));
+
+
 // 4. Tekste "obuolys, bananas, kivis" pakeiskite visus kablelius į kabliataškius.
-
-
-
+let words1 = "obuolys, bananas, kivis";
+let words11 = words1.split(",").join(';')
+console.log('  4uzduotis');
+console.log(words11);
 // 5. Suskaičiuokite, kiek yra žodžių string'e "Šiandien gera diena.".
 
 let sakinys = "Siandien gera diena";
@@ -208,6 +206,11 @@ console.log(skaiciuoti);
 
 
 // 6. Patikrinkite, ar tekstas "test@gmail.com" turi @ ir baigiasi .com.
+
+let tikrinti = "test@gmail.com";
+let ieskoti = tikrinti.includes('@') && tikrinti.endsWith('.com');
+console.log('   6 uzduotis');
+console.log(ieskoti);
 
 
 // 7. Pašalinkite pirmą simbolį string'e " JavaScript", jei jis yra tarpas.
@@ -221,11 +224,9 @@ console.log(zod.trimStart());
 
 const zodis99 = "JavaScript";
 const zodis88 = "javaScript"
-console.log(zodis99.toLocaleLowerCase=== zodis88.toLocaleLowerCase);
+console.log(zodis99.toLocaleLowerCase === zodis88.toLocaleLowerCase);
 
 // 9. Pašalinkite visus skaičius iš teksto "a1b2c3".
-
-
 
 const teksto = "a1b2c3";
 
