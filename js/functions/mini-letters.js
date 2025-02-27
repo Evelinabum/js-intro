@@ -30,19 +30,15 @@ function isrinktiRaides(text, step) {
     let result = '';
 
     if (step > 0) {
-        for (let i = 0; i < text.length; i++) {
-            if (i % step === step - 1) {
+        for (let i = step - 1; i < text.length; i+= step) {
                 result += text[i];
             }
+        } else {
+            for(let i = text.length + step; i >= 0; i += step ) {
+                result += text[i];
         }
-    } else {
-        if(step < 0) {
-         for (let i = 0; i < text.length -1 ; i--) {
-            if (i % step === step -1)
-                result += text[i];
-            }
-         }
     }
+
 
     return result;
 }
