@@ -185,5 +185,77 @@ function position(letter) {
     return `Position of alphabet : ${alphabet.indexOf(letter) + 1}`;
 }
 console.log(position('a'));
+console.clear();
 
 
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * Define a method hello that returns "Hello, Name!" to a given name, or says Hello, World! if name is not given (or passed as an empty String).
+
+Assuming that name is a String and it checks for user typos to return a name with a first capital letter (Xxxx).
+
+Examples:
+
+* With `name` = "john"  => return "Hello, John!"
+* With `name` = "aliCE" => return "Hello, Alice!"
+* With `name` not given 
+  or `name` = ""        => return "Hello, World!"
+ */
+  function hello(name = "") {
+    if (!name) {
+        return "Hello, World!";
+    }
+    const changeName = name.charAt(0).toUpperCase() + name.slice(1).toLowerCase(0);
+    return `Hello, ${changeName}!`;
+  }
+  console.log(hello("john"));
+  console.log(hello("aliCe"));
+  console.log(hello());
+  console.log(hello(""));
+console.clear();
+
+  
+
+
+
+
+/**
+ * Write a function that will check if two given characters are the same case.
+
+If either of the characters is not a letter, return -1
+If both characters are the same case, return 1
+If both characters are letters, but not the same case, return 0
+Examples
+'a' and 'g' returns 1
+
+'A' and 'C' returns 1
+
+'b' and 'G' returns 0
+
+'B' and 'g' returns 0
+
+'0' and '?' returns -1
+ */
+
+
+
+  //console.log(sameCase('a', 'g'));
+  //console.log(sameCase('A', 'C'));
+  //console.log(sameCase('b', 'G'));
+  //console.log(sameCase('B', 'g'));
+  //console.log(sameCase('0', '?'));
+
+
+
+
+  

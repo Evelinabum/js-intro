@@ -124,6 +124,13 @@ console.log(weather(26))
 
 // 6.Parašykite programą, kuri patikrina, ar vartotojo įvestas skaičius yra daliklis tiek 3, tiek 5. Kurį operatorių naudoti?
 
+function dalyba (daliklis) {
+  return daliklis % 3 === 0 && daliklis % 5 === 0 ? 'puikiai' : 'Sis skaicius nera daliklis is 3 ir 5'
+}
+console.log(' Sesta uzduotis');
+console.log(dalyba(15));
+console.log(dalyba(20));
+console.log(dalyba(30));
 
  
 // 7.Sukurkite funkciją, kuri pagal įvestą dienos tipą("darbo diena", "savaitgalis") išveda atitinkamą veiklą: "Dirbti", "Ilsėtis".Kuri struktūra geriausiai tinka?

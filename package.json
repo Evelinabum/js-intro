@@ -7,6 +7,8 @@
     "dev:back": "",
     "dev:front": "",
     "prod:back":"",
+    "oop" : "node --watch js/oop/oop-method.js",
+    "oop:method" : "node --watch js/oop/oop.js",
 
     "dest" : "node --watch js/functions/dest.js" ,
     "loops" : "node --watch js/loops/17-loops.js" ,
@@ -14,9 +16,11 @@
     "ref" : "node --watch intro/14-ref.js" ,
     "object" : "node --watch variables/13-object.js" ,
     "mini:digits" : "node --watch js/functions/mini-digits.js",
+    "sum" : "node --watch js/functions/sum.js",
     
     "mini:max" : "node --watch js/functions/mini-max.js",
     "mini:letters" : "node --watch js/functions/mini-letters.js",
+    "mini:count" : "node --watch js/functions/mini-count.js",
     
     "mini" : "node --watch js/functions/mini.js",
     "array:sort" : "node --watch js/functions/12-array-sort.js",

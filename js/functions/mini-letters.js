@@ -1,3 +1,28 @@
+/** 
+ * priima du kintamuosius:
+pirmasis nurodo tekstą, su kuriuo reikės atlikti užduotį
+antrasis nurodo kas kelintą raidę išrinkti
+patikrinti, ar pirmasis kintamasis yra teksto tipo:
+jei ne, išvedame pranešimą “Pirmasis kintamasis yra netinkamo tipo.”
+priešingu atveju tęsiame darbą
+patikrinti, ar pirmasis kintamasis yra ne tuščias tekstas ir ne didesnis nei 100 simbolių:
+jei ne, išvedame pranešimą “Pirmojo kintamojo reikšmė yra netinkamo dydžio.”
+priešingu atveju tęsiame darbą
+patikrinti, ar antrasis kintamasis yra skaičiaus tipo:
+jei ne, išvedame pranešimą “Antrasis kintamasis yra netinkamo tipo.”
+priešingu atveju tęsiame darbą
+patikriname, ar antrojo kintamojo vertė yra didesnė už nulį:
+jei ne, išvedame pranešimą “Antrasis kintamasis turi būti didesnis už nulį.”
+priešingu atveju tęsiame darbą
+patikriname, ar antrojo kintamojo vertė yra ne didesnė už pirmojo kintamojo ilgį:
+jei ne, išvedame pranešimą “Antrasis kintamasis turi būti ne didesnis už pateikto teksto ilgį.”
+priešingu atveju tęsiame darbą
+išrenkame iš nurodyto teksto kas kelintą raidę (pagal antrojo kintamojo žingsnį)
+išrinktas raides sudėti į atskirą kintamąjį, kuris yra teksto tipo
+gražina rezultatą
+TESTAI:
+
+*/
 function isrinktiRaides(text, step) {
     if (arguments.length !== 2) {
         return 'Netinkamas parametrų kiekis.';

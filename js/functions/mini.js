@@ -213,61 +213,9 @@ console.log(dalyba(dalyba()));
 console.log(dalyba(10, 0));
 console.log(dalyba(0, 10));
 
-/**
- * Ciklo for panaudojimas
-1.Suskaičiuoti ką gausime susumavus skaičius intervale tarp (imtinai):
-a.  0 … 0
-b.  0 … 4
-c.  0 … 100
-d.  574 … 815
-e.  -50 … 50
-f.  -70 … 30
-2.panaudojant ciklą perrašyti tekstinio tipo kintamųjų reikšmes iš kito galo:
-pvz.: “abcdef” -> “fedcba”
-
-
-3.Suskaičiuoti, kiek nurodytame intervale yra skaičių, kurie dalijasi be liekanos iš 3, 5 ir 7 atskirai:
-a.  0 - 11
-b.  8 - 31
-c. -18 - 18
-rezultatą pateikti tokiu formatu:
-*Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 3 yra 4 vienetai.
-*Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 5 yra 3 vienetai.
-*Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 7 yra 2 vienetai.
-
- */
+//******
 console.log('**************');
-function suskaiciuotiSuma (num1, num2) {
-    if(typeof num1 !== 'number' || typeof num2 !== 'number') {
-        return 'Pateikti skaiciai nera skaiciaus tipo'
-    }
-    if(isFinite(num1) || isFinite(num2)) {
-        return 'Pateikti skaiciai nera normalus skaiciai';
-    }
-    const n1 = num1 = num1 < num2 ? num1 : num2;
-    const n2 = num2 = num2 > num1 ? num2 : num1;
-    
-    let intervalSum = 0;
 
-    for(let i = n1 - (n1 % 1); i <= num2; i++) {
-        intervalSum += i;
-
-    }
-    return intervalSum;
-}
-   console.log(`0-> 0 = ${suskaiciuotiSuma(0, 0)}`);
-   console.log(`0-> 4 = ${suskaiciuotiSuma(0, 4)}`);
-   console.log(`4-> 0 = ${suskaiciuotiSuma(0, 4)}`);
-   console.log(`-4.5-> 1.4 = ${suskaiciuotiSuma(-4.5, 1.4)}`);
-   console.log(`0-> 100 = ${suskaiciuotiSuma(0, 100)}`);
-   console.log(`574-> 815 = ${suskaiciuotiSuma(574, 815)}`);
-   console.log(`-50-> 50 = ${suskaiciuotiSuma(-50, 50)}`);
-   console.log(`-70-> 30 = ${suskaiciuotiSuma(-70, 30)}`);
-   console.log(`90-> 30 = ${suskaiciuotiSuma(-70, 30)}`);
-   console.log(`-70.5-> 30.4 = ${suskaiciuotiSuma(-70, 30)}`);
-   console.log(`Infinity -> 30 = ${suskaiciuotiSuma(-70, 30)}`);
-   console.log(`'ABC'-> 30 = ${suskaiciuotiSuma(-70, 30)}`);
-   console.log(`NaN -> 30 = ${suskaiciuotiSuma(-70, 30)}`);
 
 
 

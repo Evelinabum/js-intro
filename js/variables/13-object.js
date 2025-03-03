@@ -106,7 +106,25 @@ for(let i = 0; i < maryte.parents.length; i++) {
 }
 
 
+const jonas1 = {
+    name: 'John',
+    age: 99,
+    isMarried: true,
+};
+const maryte1 = {
+    name: 'Maryte',
+    age: 88,
+    isMarried: false,
+};
 
+function hi(person) {
+    return `Sveiki, mano vardas yra ${person.name}.`;
+}
+
+console.log(hi(jonas1));
+console.log(hi(maryte1));
+console.log(hi({}));
+console.log(hi({ age: 66 }));
 
 
 
