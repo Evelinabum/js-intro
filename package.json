@@ -7,8 +7,10 @@
     "dev:back": "",
     "dev:front": "",
     "prod:back":"",
-    "oop" : "node --watch js/oop/oop-method.js",
-    "oop:method" : "node --watch js/oop/oop.js",
+    "oop" : "node --watch js/oop/oop.js",
+    "oop:method" : "node --watch js/oop/oop-method.js",
+    "oop:extends" : "node --watch js/oop/oop-extends.js",
+    "oop:uzduotys" : "node --watch js/oop/oop-uzduotys.js",
 
     "dest" : "node --watch js/functions/dest.js" ,
     "loops" : "node --watch js/loops/17-loops.js" ,
