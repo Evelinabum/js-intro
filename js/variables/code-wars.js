@@ -230,32 +230,34 @@ console.clear();
 
 
 /**
- * Write a function that will check if two given characters are the same case.
+ * Wolves have been reintroduced to Great Britain. You are a sheep farmer, and are now plagued by wolves which pretend to be sheep. Fortunately, you are good at spotting them.
 
-If either of the characters is not a letter, return -1
-If both characters are the same case, return 1
-If both characters are letters, but not the same case, return 0
+Warn the sheep in front of the wolf that it is about to be eaten. Remember that you are standing at the front of the queue which is at the end of the array:
+
+[sheep, sheep, sheep, sheep, sheep, wolf, sheep, sheep]      (YOU ARE HERE AT THE FRONT OF THE QUEUE)
+   7      6      5      4      3            2      1
+If the wolf is the closest animal to you, return "Pls go away and stop eating my sheep". Otherwise, return "Oi! Sheep number N! You are about to be eaten by a wolf!" where N is the sheep's position in the queue.
+
+Note: there will always be exactly one wolf in the array.
+
 Examples
-'a' and 'g' returns 1
+Input: ["sheep", "sheep", "sheep", "wolf", "sheep"]
+Output: "Oi! Sheep number 1! You are about to be eaten by a wolf!"
 
-'A' and 'C' returns 1
-
-'b' and 'G' returns 0
-
-'B' and 'g' returns 0
-
-'0' and '?' returns -1
+Input: ["sheep", "sheep", "wolf"]
+Output: "Pls go away and stop eating my sheep"
  */
 
-
-
-  //console.log(sameCase('a', 'g'));
-  //console.log(sameCase('A', 'C'));
-  //console.log(sameCase('b', 'G'));
-  //console.log(sameCase('B', 'g'));
-  //console.log(sameCase('0', '?'));
-
-
-
-
+function warnTheSheep(queue) {
+    const wolfIndex = queue.indexOf("wolf");
+    if(wolfIndex === queue.length -1){
+        return "Pls go away and stop eating my sheep";
+    } else {
+        const sheepPosition = queue.length -1 - wolfIndex;
+        return `Oi! Sheep number ${sheepPosition}! You are about to be eaten by a wolf!`;
+    }
+}
+console.log(warnTheSheep(['sheep', 'sheep', 'sheep', 'wolf', 'sheep', 'sheep']));
+console.log(warnTheSheep(['sheep', 'walf']));
+console.log(warnTheSheep(['wolf']));
   
