@@ -126,5 +126,4 @@ console.log(hi(maryte1));
 console.log(hi({}));
 console.log(hi({ age: 66 }));
 
-
-
+//----------------
