@@ -585,6 +585,15 @@ console.log(`${numbersFor(numbers20)}`);
  
 // Sprendimas su reduce:
 // Jūsų kodas čia...
+function cumulative (arr) {
+    return arr.reduce(acc, currentValue, index) 
+
+    }
+  
+    
+
+console.log('     Dvidesimta uzduotis su reduce');
+console.log
 
  
  
