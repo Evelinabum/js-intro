@@ -91,7 +91,7 @@ const bigerLucky = luckyNumbers.map(n => n * 10 );
 console.log(bigerLucky);
 
 // 1 - grazinti didesnius uz 20
-// 2 - grazinti didesnius arba lygius 28
+// 2 - grazinti didesnius arba lygius 20
 //[0, 1, 5, 7, 13, 28, 66, 69] -> [28,66,69]
 //3 - grazinti mazesnisu uz 50
 
