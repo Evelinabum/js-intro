@@ -38,9 +38,6 @@ function didesnisSk (skaicius1, skaicius2) {
 console.log('         Trecia uzduotis');
 console.log(didesnisSk(5,8));
 
-
-
-
  
 // 4. Sukurkite funkciją, kuri priima stringą ir grąžina jį atvirkštine tvarka.
 // (Pvz., reverseString("JavaScript") → "tpircSavaJ".)
@@ -94,11 +91,6 @@ function skaicius (num) {
         console.log(skaicius(2));
 
         
-    
-
-
-
- 
 // 7. Parašykite funkciją, kuri tikrina, ar žodis prasideda raide "A"(nesvarbu, didžioji ar mažoji).
 // (Pvz., pradedaA("Automobilis") → true, pradedaA("namas") → false.)
  
@@ -108,8 +100,6 @@ const pradedaA = (zodis) => zodis.toLowerCase().startsWith('a');
 
 console.log(pradedaA('Automobilis'));
 console.log(pradedaA('namas'));
-
-
 
 
 // 8. Sukurkite funkciją, kuri priima skaičių ir patikrina, ar jis dalus iš 3 ir 5(grąžina true arba false).
