@@ -14,12 +14,12 @@ if(a === null) {
 }
 
 const b = {};
-if ( b === {}) {
+if ( b == {}) {
     console.log('yes:{}');
 }
 
  const c = [];
-    if(a === []) {
+    if(a == []) {
         console.log('yes: []');
 }  
 

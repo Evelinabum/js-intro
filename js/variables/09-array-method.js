@@ -25,11 +25,9 @@ console.log(students.length);
 
 
 for (let i = 0; i < students.length; i++) {
-   console.log(i, 'Studentas: ${students[i]} pradėjo mokytis.');
+   console.log(i, `Studentas: ${students[i]} pradėjo mokytis.`);
 
 }
-
-
 
 const x = [ 'asd' ];
 

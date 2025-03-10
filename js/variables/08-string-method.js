@@ -77,7 +77,7 @@ console.log(chuck, nameSize);
 //Off by one(kai ne taip pamatuoji dalykus)
 
 //atvirksciai:
-console.log('*************');
+console.log('***************');
 
 for (let i=chuck.length-1; i >= 0 ; i--) {
   
